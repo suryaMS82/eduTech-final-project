@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-container{
+    background-color: whitesmoke;
+}
+.header-container ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 10px;
+
+}
+.header-container ul li big{
+    font-family: 'Permanent Marker', cursive;
+    font-size:40px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: red;
+}
+.header-container ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+.header-container ul .serch input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 17px;
+    background-color: whitesmoke;
+    background: transparent;
+}
+.header-container ul .serch .fa{
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;
+}
+.header-info .serch{
+    border: 1px gray solid;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    padding: 5px 40px ;
+}
+.header-info .categ {
+    font-size: 18px;
+    margin-top: 22px;
+}
+.header-info .categ a{
+    font-size: 20px;
+}
+
+.header-info .teach{
+    font-size: 18px;
+    margin-top: 22px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.header-info .teach:hover{
+    color: tomato;
+
+}
+.header-info .login,.signin{
+    margin-top: 15px;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    border: 1px solid green;
+    margin-bottom: 10px;
+    background-color:rgb(18, 99, 99);
+    border-radius: 5px;
+
+}
+.header-info .login a {
+    color: white;
+    font-size: 20px;
+}
+.header-info .signin a{
+    color: white;
+    font-size: 20px ;
+}
+.categ .submenu{
+    display: none;
+}
+.header-container ul li:hover .submenu{
+    display:block
+
+}
+
+.header-container ul:hover .submenu ul{
+    display: block;
+    margin-top:15px;
+    position: absolute;
+    background-color: rgb(243, 247, 247);
+    width: 250px;
+    border-radius: 3px;
+    border: 0.5px solid rgb(236, 229, 229);
+    padding-left: 10px;
+    margin-left: -20px;
+
+}
+.header-container ul:hover .submenu ul li{
+    color:rgb(63, 62, 62);
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*body content*/
+
+img{
+    width: 100%;
+    height: 700px;
+    border-bottom: 5px solid rgb(202, 201, 201);
+}
+.section-container{
+    position: absolute;
+    left: 6%;
+    top: 25%;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.5px solid whitesmoke;
+    width: 400px;
+}
+.section-container ul{
+    list-style: none;
+    margin: 30px;
+}
+.section-container ul li big{
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.section-container ul li{
+    font-size: 22px;
+    padding-top: 10px;
+}
+.section-container ul .input{
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px rgb(211, 206, 206) solid;
+    padding: 5px 10px ;
+}
+.section-container ul .input input{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-right: 100px;
+}
+.amibitions{
+    display: flex;
+}
+.amibitions div{
+    justify-content: space-around;
+}
+.another-sections{
+    background-color:whitesmoke;
+    position:relative;
+    border-bottom: 1px solid gray;
+    height: 250px;
+
+}
+.amibitions  .transfer{
+    margin: 30px 50px;
+    font-size: 30px;
+    width: 500px;
+}
+.amibitions .textinfo{
+    margin: 40px  100px;
+    width: 550px;
+    font-size: 22px;
+
+}
+.footer-container{
+    background-color: rgb(54, 107, 107);
+}
+.footer-container .footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-container .footer-info div{
+    display: block;
+    margin-top: 30px;
+}
+.footer-container .footer-info div ul{
+    list-style: none;
+    font-size: 18px;
+}
+.footer-container .footer-info div ul li{
+    padding-bottom: 10px;
+    color: white;
+}
+.footer-container{
+    padding-bottom: 30px;
+}
+
+.footer-container .copyright ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: white;
+}
+.footer-container .copyright ul .title a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;  
+}
+.footer-container .copyright ul .title big{
+    color: red;
+    font-family: 'Permanent Marker', cursive;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

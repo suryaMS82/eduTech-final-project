@@ -1,0 +1,104 @@
+<%- include('./partials/header.ejs') %>
+<body>
+    <header class="header-container">
+        <ul class="header-info">
+            
+            <li class="title"><a href="/"><big>edu</big>Tech</a></li>
+            <li class="categ"><a href="/">Categories</a>
+            <div class="submenu">
+                <ul>
+                    <li>Digital Marketing</li>
+                    <li>Enterpreneurship</li>
+                    <li>Game Development</li>
+                    <li>Mobile Development</li>
+                    <li>web Development</li>
+                    <li>business analytics</li>
+                    <li>business intelligence</li>
+                    <li>artificial intelligence</li>
+                    <li>machine learning</li>
+    
+                </ul>
+            </div>
+            </li>
+            <li class="serch"><i class="fa fa-search"></i><input type="text" placeholder="serch for anything"></li>
+            <li class="teach">teach on eduTech</li>
+            <li class="teach">my learning</li>
+            <li class="signin"><a href="/login">Log Out</a></li>
+            <li class="userprof"><i class="fa fa-bars"></i></li>
+        </ul>
+    
+    </header>
+    <nav class="sidemenu-user">
+        <p class="cancel"><i class="fa fa-times"></i></p>
+        
+        <div class="anchorTags">
+            <p><a href="/user/profile">user profile</a></p>
+          <p><a href="/login">Log Out</a></p>
+          <p><a href="/user/tasks">task manager</a></p>
+          <p><a href="/user/learning">my learning</a></p>
+          
+    
+        </div>
+        <div class="line"><hr></div>
+        <div class="mostpopuler">
+            <p>most popular</p>
+            <ul>
+                <li>web Development</li>
+                <li>Mobile Development</li>
+                <li>game Development</li>
+                <li>business analytics</li>
+                <li>digital Marketing</li>
+                <li>machine learning</li>
+                <li>graphic design</li>
+                <li>all Categories</li>        </ul>
+    
+        </div>
+        <div class="line"><hr></div>
+        <div class="moreabout">
+            <ul>
+                <li>more from eduTech</li>
+                <li>get the app</li>
+                <li>need a help ?</li>
+                <li>contact us</li>
+    
+            </ul>
+    
+        </div>
+    
+    </nav>
+    <div class="btn-container">
+        <button type="button" class="btn-click"><a href="/user/tasks">add</a></button>
+        <button type="button" class="btn-click"><a href="/user/alltasks">read</a></button>
+        <button type="button" class="btn-click" ><a href="/user/alltasks">update</a></button>
+        <button type="button" class="btn-click"><a href="/user/delete">delate</a></button>
+    
+    
+    </div>
+
+    <h3 class="updatehere">add your projects here</h3>
+<section class="blog-container">
+    <label style="color: brown; margin-left: 20px; font-size: 16px; padding-left: 20px; margin-bottom: 15px; border-radius: 5px; background-color: cornsilk;"><%= value %></label>
+    <form action="/user/tasks" method="post">
+        <label for="project">project name</label>
+        <input type="text" name="project">
+        <label for="descri"> describe your project </label>
+        <textarea name="descri"  cols="15" rows="5"></textarea>
+        
+        <label for="completed">completed ?</label>
+        <input type="text" name="completed" placeholder="True or False">
+        <label for="date">date</label>
+        <input type="date" name="date">
+
+        <button type="submit">submit</button>
+    
+    </form>
+
+    
+</section>
+
+ 
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/userjs.js"></script>
+    </body>
+</html>

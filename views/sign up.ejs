@@ -1,0 +1,41 @@
+<%- include('./partials/header.ejs')%>
+<body>
+    <%- include('./partials/body.ejs') %>
+
+    <nav class="signupcreadials">
+        <div class="signuptext">
+            <h4>sign up here and start learning</h4>
+
+        </div>
+
+        <div class="sign-up-form">
+           
+            <%- include('./partials/alerts.ejs' ) %>
+            <form action="/signup" method="POST">
+                <label for="firstname">first name</label>
+                <input type="text" name="firstname" >
+                <label for="lastname">last name</label>
+                <input type="text" name="lastname">
+                <label for="email">email</label>
+                <input type="email" name="email">
+                <label for="password">password</label>
+                <input type="password" name="password">
+                <label for="repassword">re-type password</label>
+                <input type="password" name="repassword">
+                <button type="submit">sign up</button>
+            </form>
+
+        </div>
+        <div class="gotologin">
+            <p>alredy have an account ? <a href="/login">log in</a></p>
+        </div>
+
+    </nav>
+
+
+
+
+    <%- include('./partials/footer.ejs') %>
+   
+</body>
+</html>

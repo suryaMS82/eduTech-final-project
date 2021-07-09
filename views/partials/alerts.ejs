@@ -1,0 +1,14 @@
+<div class="alertmsgs">
+<% if(typeof errors != 'undefined') { %>
+
+    <% errors.forEach(function(error){  %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+       <p class="btnclick"> <%= error.msg %></p>
+
+      </div>
+    
+      <% }); %>
+    
+      <% } %>
+
+</div>

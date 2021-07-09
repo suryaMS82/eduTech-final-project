@@ -1,0 +1,135 @@
+<%- include('./partials/header.ejs') %>
+<body>
+    <header class="header-container">
+        <ul class="header-info">
+            
+            <li class="title"><a href="/"><big>edu</big>Tech</a></li>
+            <li class="categ"><a href="/">Categories</a>
+            <div class="submenu">
+                <ul>
+                    <li>Digital Marketing</li>
+                    <li>Enterpreneurship</li>
+                    <li>Game Development</li>
+                    <li>Mobile Development</li>
+                    <li>web Development</li>
+                    <li>business analytics</li>
+                    <li>business intelligence</li>
+                    <li>artificial intelligence</li>
+                    <li>machine learning</li>
+    
+                </ul>
+            </div>
+            </li>
+            <li class="serch"><i class="fa fa-search"></i><input type="text" placeholder="serch for anything"></li>
+            <li class="teach">teach on eduTech</li>
+            <li class="teach"><a href="/user/learning" style="font-size: 18px;"> my learning</a>
+            <div class="learning-menu">
+                <iframe width="200" height="50" src="https://www.youtube.com/embed/8KaJRw-rfn8" title="YouTube video player" frameborder="5" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="200" height="50" src="https://www.youtube.com/embed/uBV0w8Qwhv4" title="YouTube video player" frameborder="5" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><a href="/user/learning">start learning</a></p>
+            </div>
+            </li>
+            <li class="signin"><a href="/login">Log Out</a></li>
+            <li class="userprof"><i class="fa fa-bars"></i></li>
+        </ul>
+    
+    </header>
+    <nav class="sidemenu-user">
+        <p class="cancel"><i class="fa fa-times"></i></p>
+        
+        <div class="anchorTags">
+            <p>hello, <%= name %></p>
+            <p><a href="/user/profile">user profile</a></p>
+          <p><a href="/login">Log Out</a></p>
+          <p><a href="/user/tasks">task manager</a></p>
+          <p><a href="/user/learning">my learning</a></p>
+    
+        </div>
+        <div class="line"><hr></div>
+        <div class="mostpopuler">
+            <p>most popular</p>
+            <ul>
+                <li>web Development</li>
+                <li>Mobile Development</li>
+                <li>game Development</li>
+                <li>business analytics</li>
+                <li>digital Marketing</li>
+                <li>machine learning</li>
+                <li>graphic design</li>
+                <li>all Categories</li>        </ul>
+    
+        </div>
+        <div class="line"><hr></div>
+        <div class="moreabout">
+            <ul>
+                <li>more from eduTech</li>
+                <li>get the app</li>
+                <li>need a help ?</li>
+                <li>contact us</li>
+    
+            </ul>
+    
+        </div>
+    
+    </nav>
+
+
+<section class="yourcourses">
+    <div class="anotherimg">
+        <img src="/img2.jpg" alt="image">
+
+    </div>
+    <div class="text-new">
+        <h2>start here , all new technologies</h2>
+    </div>
+    <div class="allcourser">
+    <div class="coursevideo">
+        <div class="videos">
+        <iframe width="450" height="300" src="https://www.youtube.com/embed/8KaJRw-rfn8" title="YouTube video player" frameborder="12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+        <div class="information">
+            <h3>learn full stack web Development</h3>
+            <p>simplelearn trainings</p>
+            <h4>free </h4>
+            <p><big>new</big></p>
+            
+        </div>
+        <div class="squarebox">
+            <p class="square"><i class="fa fa-check"></i></p>
+        </div>
+
+    </div>
+    <div style="margin-bottom: 20px;"><hr></div>
+    <div class="coursevideo">
+        <div class="videos">
+        <iframe width="450" height="315" src="https://www.youtube.com/embed/uBV0w8Qwhv4" title="YouTube video player" frameborder="12" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="information">
+            
+            <h3>become an artificial intelligence engineer</h3>
+            <p>simplelearn trainings</p>
+            <h4>free </h4>
+            <p><big>hot&new</big></p>
+        </div>
+        <div class="squarebox">
+            <p class="square"><i class="fa fa-check"></i></p>
+        </div>
+
+    </div>
+    </div>
+
+</section>
+
+<div class="yourfuture">
+    <h2>start exploring your future</h2>
+    <p>start moving toward and take eduTech courses at free of cost</p>
+
+</div>
+
+
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/userjs.js"></script>
+    </body>
+</html>

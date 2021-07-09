@@ -1,0 +1,43 @@
+<%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/body.ejs') %>
+    
+    <section class="loginform">
+        <div class="login-container">
+            <div class="logintext">
+                <h3>log in to your eduTech account, here</h3>
+                
+
+            </div>
+            <div class="credentionals">
+               <p style="color:crimson; background-color: darkgray; margin-left: 25px; margin-bottom: 10px; border-radius: 5px;"> <%= msg %></p>
+                
+                <%- include('./partials/alerts.ejs') %>
+                <form action="/login" method="POST">
+                    <label >email</label>
+                    <input type="email" name="email" >
+                    <label for="password" >password</label>
+                    <input type="password" name="password" >
+                    <label for="repassword">Re-type password</label>
+                    <input type="password" name="repassword" >
+
+                    <button type="submit" class="log-in">log in</button>
+                </form>
+            
+            </div>
+            
+            <div class="forgetform">
+                <p>Or<a href="/">forgot password</a></p>
+                <p>Don't have an account ?<a href="/signup">sign up</a></p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    
+    <%- include('./partials/footer.ejs') %>
+    
+</body>
+</html>
